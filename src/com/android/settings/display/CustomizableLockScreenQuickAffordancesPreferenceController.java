@@ -16,9 +16,11 @@
 
 package com.android.settings.display;
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
-import android.text.TextUtils;
+import android.util.Log;
+import android.widget.Toast;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
@@ -33,6 +35,9 @@ import com.android.settingslib.utils.ThreadUtils;
  */
 public class CustomizableLockScreenQuickAffordancesPreferenceController extends
         BasePreferenceController implements PreferenceControllerMixin {
+
+    private static final String TAG = "LockscreenQuickActions";
+    private static final String ROM_WALLPAPER_PICKER = "com.android.wallpaper";
 
     public CustomizableLockScreenQuickAffordancesPreferenceController(Context context, String key) {
         super(context, key);
@@ -52,13 +57,25 @@ public class CustomizableLockScreenQuickAffordancesPreferenceController extends
         if (preference != null) {
             preference.setOnPreferenceClickListener(preference1 -> {
                 final Intent intent = CustomizableLockScreenUtils.newIntent();
-                final String packageName =
-                        mContext.getString(R.string.config_wallpaper_picker_package);
-                if (!TextUtils.isEmpty(packageName)) {
-                    intent.setPackage(packageName);
-                }
                 intent.putExtra("destination", "quick_affordances");
-                mContext.startActivity(intent);
+
+                // Prefer the installed MistOS WallpaperPicker2. The default
+                // config_wallpaper_picker_package points to com.android.settings,
+                // which does not handle ACTION_SET_WALLPAPER here.
+                intent.setPackage(ROM_WALLPAPER_PICKER);
+                if (intent.resolveActivity(mContext.getPackageManager()) == null) {
+                    // Keep the standard wallpaper handler for other builds.
+                    intent.setPackage(null);
+                }
+
+                try {
+                    mContext.startActivity(intent);
+                } catch (ActivityNotFoundException | SecurityException e) {
+                    Log.w(TAG, "Cannot open lock screen quick actions editor", e);
+                    Toast.makeText(mContext,
+                            R.string.lockscreen_shortcuts_editor_unavailable,
+                            Toast.LENGTH_SHORT).show();
+                }
                 return true;
             });
             refreshSummary(preference);
