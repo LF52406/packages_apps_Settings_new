@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mist_qs_style_title">Стиль центра управления</string>
+    <string name="mist_qs_style_summary">Выбор оформления быстрых настроек</string>
+    <string name="mist_qs_style_mist_title">MistOS (по умолчанию)</string>
+    <string name="mist_qs_style_mist_summary">Центр управления MistOS с ползунками, медиапанелью и настраиваемыми плитками</string>
+    <string name="mist_qs_style_android_title">Android 17</string>
+    <string name="mist_qs_style_android_summary">Стандартные плитки Android, яркость и управление мультимедиа</string>
+</resources>
