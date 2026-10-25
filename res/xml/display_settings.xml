@@ -103,10 +103,13 @@
             android:fragment="com.android.settings.display.ScreenTimeoutSettings"
             settings:controller="com.android.settings.display.ScreenTimeoutPreferenceController"/>
 
+        <!-- System-server PocketService already observes Settings.System.POCKET_JUDGE.
+             This is separate from Lineage proximity_on_wake. -->
         <org.mist.settings.preferences.SystemSettingSwitchPreference
             android:key="pocket_judge"
-            android:title="@string/proximity_wake_title"
-            android:summary="@string/proximity_wake_summary"
+            android:title="@string/pocket_mode_title"
+            android:summary="@string/pocket_mode_summary"
+            android:defaultValue="false"
             settings:requiresConfig="@*android:bool/config_pocketModeSupported" />
 
         <org.mist.settings.preferences.DeviceConfigSwitchPreference
