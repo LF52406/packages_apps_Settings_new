@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pocket_mode_title">Режим «В кармане»</string>
+    <string name="pocket_mode_summary">Предотвращает случайные нажатия на экран и кнопки, когда телефон находится в кармане. Использует датчик приближения и, при наличии, датчик освещённости на экране блокировки.</string>
+</resources>
