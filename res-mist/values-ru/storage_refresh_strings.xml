@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="storage_refresh_title">Обновление хранилища</string>
+    <string name="storage_refresh_summary">Обслуживание накопителя и история операций</string>
+    <string name="storage_refresh_chart_title">История обслуживания</string>
+    <string name="storage_refresh_chart_subtitle">Успешные ручные запуски за последние 7 дней</string>
+    <string name="storage_refresh_completed_count">Запусков за 7 дней: %1$d</string>
+    <string name="storage_refresh_background_title">Автоматическое обслуживание</string>
+    <string name="storage_refresh_description">Android автоматически обслуживает накопитель во время простоя. При ручном запуске выполняются сборка мусора файловой системы, когда это необходимо, и TRIM через vold.</string>
+    <string name="storage_refresh_last_title">Последняя ручная попытка</string>
+    <string name="storage_refresh_last_run">Последняя ручная попытка: %1$s</string>
+    <string name="storage_refresh_never">Ещё не выполнялось</string>
+    <string name="storage_refresh_history_note">График показывает завершённые ручные обслуживания, а не количество фрагментов файлов. Фоновое обслуживание Android выполняет отдельно.</string>
+    <string name="storage_refresh_button">Оптимизировать хранилище</string>
+    <string name="storage_refresh_button_running">Выполняется…</string>
+    <string name="storage_refresh_next_available">Следующий ручной запуск доступен: %1$s</string>
+    <string name="storage_refresh_button_retry">Повторить попытку</string>
+    <string name="storage_refresh_in_progress">Обслуживание хранилища выполняется. Вы можете выйти из этого экрана.</string>
+    <string name="storage_refresh_success">Обслуживание успешно завершено</string>
+    <string name="storage_refresh_failed">Не удалось завершить обслуживание</string>
+    <string name="storage_refresh_ready">Хранилище готово к ручному обслуживанию</string>
+    <string name="storage_refresh_unsafe">Подключите зарядку или зарядите батарею до 75 % и дождитесь охлаждения ниже 40 °C.</string>
+    <string name="storage_refresh_recent">Обслуживание уже выполнялось недавно. До следующего запуска должно пройти не менее шести часов.</string>
+    <string name="storage_refresh_timeout">Не удалось подтвердить завершение. Система может продолжать работу; не запускайте обслуживание повторно сразу.</string>
+</resources>

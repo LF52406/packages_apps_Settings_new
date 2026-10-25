@@ -6440,6 +6440,13 @@
             </intent-filter>
         </receiver>
 
+        <!-- Privileged manual storage refresh using the system vold maintenance path. -->
+        <activity
+            android:name=".deviceinfo.storage.StorageRefreshActivity"
+            android:exported="false"
+            android:label="@string/storage_refresh_title"
+            android:parentActivityName=".Settings" />
+
         <!-- System Updates -->
         <activity
             android:name="com.google.android.settings.update.SoftwareUpdateActivity"

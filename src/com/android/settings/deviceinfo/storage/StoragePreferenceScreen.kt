@@ -131,6 +131,16 @@ open class StoragePreferenceScreen(private val context: Context) :
                 tags = listOf(UI_ONLY_PREFERENCE)
             )
 
+            // Storage refresh (also visible when the Catalyst storage UI is enabled).
+            +StoragePreference(
+                KEY_STORAGE_REFRESH,
+                R.string.storage_refresh_summary,
+                R.string.storage_refresh_title,
+                { c -> Intent(c, StorageRefreshActivity::class.java) },
+                { c -> c.getString(R.string.storage_refresh_summary) },
+                tags = listOf(UI_ONLY_PREFERENCE),
+            )
+
             // Apps
             +StoragePreference(
                 KEY_PREF_APPS,
@@ -349,6 +359,7 @@ open class StoragePreferenceScreen(private val context: Context) :
         const val KEY_SUMMARY_USED = "storage_summary_used"
         const val KEY_SUMMARY_TOTAL = "storage_summary_total"
         const val KEY_FREE_UP_SPACE = "free_up_space"
+        const val KEY_STORAGE_REFRESH = "storage_refresh"
         const val KEY_PREF_APPS = "pref_apps"
         const val KEY_PREF_GAMES = "pref_games"
         const val KEY_PREF_DOCUMENTS = "pref_documents"

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="storage_refresh_title">Storage refresh</string>
+    <string name="storage_refresh_summary">Storage maintenance and recent activity</string>
+    <string name="storage_refresh_chart_title">Maintenance history</string>
+    <string name="storage_refresh_chart_subtitle">Successful manual runs over the last 7 days</string>
+    <string name="storage_refresh_completed_count">Runs in 7 days: %1$d</string>
+    <string name="storage_refresh_background_title">Automatic maintenance</string>
+    <string name="storage_refresh_description">Android maintains storage automatically when the device is idle. A manual run requests filesystem garbage collection, when needed, and TRIM through vold.</string>
+    <string name="storage_refresh_last_title">Last manual attempt</string>
+    <string name="storage_refresh_last_run">Last manual attempt: %1$s</string>
+    <string name="storage_refresh_never">Not run yet</string>
+    <string name="storage_refresh_history_note">The chart shows completed manual maintenance runs, not file fragments. Background maintenance is tracked separately by Android.</string>
+    <string name="storage_refresh_button">Optimize storage</string>
+    <string name="storage_refresh_button_running">Optimizing…</string>
+    <string name="storage_refresh_next_available">Next manual run available: %1$s</string>
+    <string name="storage_refresh_button_retry">Try again</string>
+    <string name="storage_refresh_in_progress">Storage maintenance in progress. You can leave this page while it runs.</string>
+    <string name="storage_refresh_success">Maintenance completed successfully</string>
+    <string name="storage_refresh_failed">Maintenance could not be completed</string>
+    <string name="storage_refresh_ready">Ready for manual maintenance</string>
+    <string name="storage_refresh_unsafe">Connect the charger or charge the battery to 75%, and let it cool below 40°C.</string>
+    <string name="storage_refresh_recent">Maintenance already completed recently. Wait at least six hours before another run.</string>
+    <string name="storage_refresh_timeout">Completion could not be confirmed. The system may still be working; do not run again immediately.</string>
+</resources>

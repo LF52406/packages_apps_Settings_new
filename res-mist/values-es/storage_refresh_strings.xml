@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="storage_refresh_title">Actualización del almacenamiento</string>
+    <string name="storage_refresh_summary">Mantenimiento e historial del almacenamiento</string>
+    <string name="storage_refresh_chart_title">Historial de mantenimiento</string>
+    <string name="storage_refresh_chart_subtitle">Ejecuciones manuales correctas en los últimos 7 días</string>
+    <string name="storage_refresh_completed_count">Ejecuciones en 7 días: %1$d</string>
+    <string name="storage_refresh_background_title">Mantenimiento automático</string>
+    <string name="storage_refresh_description">Android mantiene el almacenamiento automáticamente cuando el dispositivo está inactivo. La ejecución manual solicita la recolección de basura del sistema de archivos, cuando sea necesaria, y TRIM mediante vold.</string>
+    <string name="storage_refresh_last_title">Último intento manual</string>
+    <string name="storage_refresh_last_run">Último intento manual: %1$s</string>
+    <string name="storage_refresh_never">Aún no se ha ejecutado</string>
+    <string name="storage_refresh_history_note">El gráfico muestra mantenimientos manuales completados, no fragmentos de archivos. Android gestiona el mantenimiento en segundo plano por separado.</string>
+    <string name="storage_refresh_button">Optimizar almacenamiento</string>
+    <string name="storage_refresh_button_running">Optimizando…</string>
+    <string name="storage_refresh_next_available">Próxima ejecución manual disponible: %1$s</string>
+    <string name="storage_refresh_button_retry">Volver a intentar</string>
+    <string name="storage_refresh_in_progress">Mantenimiento en curso. Puedes salir de esta pantalla durante el proceso.</string>
+    <string name="storage_refresh_success">Mantenimiento completado correctamente</string>
+    <string name="storage_refresh_failed">No se pudo completar el mantenimiento</string>
+    <string name="storage_refresh_ready">Listo para el mantenimiento manual</string>
+    <string name="storage_refresh_unsafe">Conecta el cargador o carga la batería al 75 % y espera a que se enfríe por debajo de 40 °C.</string>
+    <string name="storage_refresh_recent">El mantenimiento se completó recientemente. Espera al menos seis horas antes de repetirlo.</string>
+    <string name="storage_refresh_timeout">No se pudo confirmar que haya terminado. El sistema podría seguir trabajando; no lo repitas de inmediato.</string>
+</resources>

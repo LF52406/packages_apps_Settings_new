@@ -45,6 +45,19 @@
         android:summary="@string/storage_free_up_space_summary"
         android:icon="@drawable/ic_delete"
         settings:controller="com.android.settings.deviceinfo.storage.ManageStoragePreferenceController"/>
+    <!-- Actual F2FS GC/TRIM maintenance, provided by the privileged StorageService.
+         No simulated fragment counts are displayed. -->
+    <Preference
+        android:key="storage_refresh"
+        android:order="5"
+        android:title="@string/storage_refresh_title"
+        android:summary="@string/storage_refresh_summary"
+        android:icon="@drawable/ic_storage"
+        settings:searchable="false">
+        <intent
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.deviceinfo.storage.StorageRefreshActivity" />
+    </Preference>
     <!-- Preference order 100~200 are 'ONLY' for storage category preferences below. -->
     <Preference
         android:key="pref_public_storage"
