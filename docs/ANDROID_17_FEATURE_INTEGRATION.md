@@ -43,7 +43,7 @@ existing `17.0` branch. Each feature should be reviewed and reverted independent
 
 ## Distinct floating-window implementation
 
-[LMOFreeform for Android 17](https://github.com/LF52406/packages_apps_LMOFreeform/commit/a103169c9d15bf4dfb9b5193c61181372cf9bd06)
+[LMOFreeform for Android 17](https://github.com/LF52406/packages_apps_LMOFreeform/commit/94661a4521235daf7944959cbb1c47bfc81eac2b)
 implements virtual-display-backed floating **application** windows. It is
 different from the SystemUI media/popup overlays and is not required for the
 QS style selector to build.
