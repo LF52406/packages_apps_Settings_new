@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mist_qs_style_title">Estilo del centro de control</string>
+    <string name="mist_qs_style_summary">Elegir el diseño de los ajustes rápidos</string>
+    <string name="mist_qs_style_mist_title">MistOS (predeterminado)</string>
+    <string name="mist_qs_style_mist_summary">Centro de control de MistOS con controles deslizantes, multimedia y mosaicos personalizados</string>
+    <string name="mist_qs_style_android_title">Android 17</string>
+    <string name="mist_qs_style_android_summary">Mosaicos, brillo y controles multimedia estándar de Android</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="mist_qs_style_title">Control center style</string>
+    <string name="mist_qs_style_summary">Choose the layout of Quick Settings</string>
+    <string name="mist_qs_style_mist_title">MistOS (default)</string>
+    <string name="mist_qs_style_mist_summary">MistOS control center with sliders, media controls and custom tiles</string>
+    <string name="mist_qs_style_android_title">Android 17</string>
+    <string name="mist_qs_style_android_summary">Standard Android Quick Settings tiles, brightness and media</string>
+</resources>
